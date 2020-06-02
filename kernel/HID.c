@@ -1062,6 +1062,7 @@ void HIDUpdateRegisters(u32 LoaderRequest)
 				}
 			}
 		}
-		HID_Timer = read32(HW_TIMER);
+		// This breaks HID Controllers on boot
+		// HID_Timer = read32(HW_TIMER);
 	}
 }
